@@ -8,9 +8,7 @@ const ProductList = () => {
       <div className="pl-texts">
         <h1 className="pl-title">Projects</h1>
         <p className="pl-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Minima accusamus, aut id quisquam voluptate possimus ipsum 
-          eum consectetur repudiandae aliquam necessitatibus unde fuga recusandae 
+          These is my actual projects I made while studying in Kodego Bootcamp.
         </p>
       </div>
       <div className="pl-list">

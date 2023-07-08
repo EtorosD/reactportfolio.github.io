@@ -71,9 +71,7 @@ const Contact = () => {
             </div>
             <div className="c-right">
               <p className="c-desc">
-                <b>What's your story</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nulla culpa in nam autem fuga necessitatibus incidunt maxime consequuntur dolorem 
-                officiis. Quos quis voluptas ut cum provident rerum! Ducimus, eaque doloremque.
+                <b>Why you should hire me?</b> I'm an aspirant full-stack web developer that is eager to grow and help you with your business.
               </p>
               <form ref={formRef} onSubmit={handleSubmit}>
                 <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Name" name="user_name"/>
