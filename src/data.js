@@ -1,13 +1,13 @@
 export const projects = [
     {
         id: 1,
-        img: require('./images/project 1.png'),
+        img: require('./images/project 2.png'),
         link: "https://etorosd.github.io/personalblog.github.io/blog.html"
     },
 
     {
         id: 2,
-        img: require('./images/project 2.png'),
+        img: require('./images/project 1.png'),
         link: "https://etorosd.github.io/petcatalog.github.io/petcatalog.html"
        
     },
