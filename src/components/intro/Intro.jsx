@@ -10,15 +10,12 @@ const Intro = () => {
                 <h1 className="i-name">David Stephen Sorote</h1>
                 <div className="i-title">
                     <div className="i-title-wrapper">
-                        <div className="i-title-item">Web Developer</div>
-                        <div className="i-title-item">Analyst/Researcher</div>
-                        <div className="i-title-item">Virtual Assistant</div>
+                        <div className="i-title-item">Front End Developer</div>
+                        <div className="i-title-item">React Developer</div>
                     </div>
                 </div>
                 <p className="i-desc">
-                As a web developer, I specialize in designing, building, and 
-                maintaining websites with a focus on visual appeal, functionality, 
-                and user experience.
+             I specialize in front-end development using React, TypeScript, JavaScript, HTML, and CSS, with strong experience in responsive design, API integration, and component-based architecture.
                 </p>
             </div>
             <svg
@@ -80,7 +77,7 @@ const Intro = () => {
         </div>
         <div className="i-right">
             <div className="i-bg"></div>
-            <img src={me} alt="profile pic" className="i-img"/>
+            {/* <img src={me} alt="profile pic" className="i-img"/> */}
         </div>
     </div>
   )

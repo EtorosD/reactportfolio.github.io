@@ -16,21 +16,28 @@ const About = () => {
         <div className="a-right">
           <h1 className="a-title">About Me</h1>
           <p className="a-sub">
-            I am a skilled web developer proficient in designing and 
-            developing innovative and user-friendly websites and applications.
+          I’m a career shifter who discovered a passion for web development and has spent the last two 
+          <br/>
+          years building real-world applications using React, TypeScript, and modern development tools. 
+          <br/>
+          Transitioning from another field taught me discipline, adaptability, and problem-solving—qualities 
+          <br/>
+          I now apply to writing clean code and delivering user-centered solutions. I’m eager to keep growing 
+          <br/>
+          and contribute to teams that value innovation and continuous improvement.
           </p>
-          <p className="a-desc">
+          {/* <p className="a-desc">
           I am a passionate and experienced full-stack web developer with expertise 
           in both front-end and back-end technologies, dedicated to creating robust and 
           visually appealing web applications.
-          </p>
+          </p> */}
           <div className="a-cert">
-            <img src={cert} alt="cert" className="a-cert-img"/>
+            {/* <img src={cert} alt="cert" className="a-cert-img"/> */}
             <div className="a-cert-texts">
-              <h4 className="a-cert-title">Full-Stack Web Dev Certificate</h4>
+              {/* <h4 className="a-cert-title">Full-Stack Web Dev Certificate</h4>
               <p className="a-cert-desc">
                 Completion of 16 weeks of bootcamp in Kodego in a full-stack web development course.
-              </p>
+              </p> */}
             </div>
           </div>
           </div>
