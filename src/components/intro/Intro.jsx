@@ -1,24 +1,32 @@
-import "./intro.css"
-import me from "../../images/dave_pic.png"
+import "./intro.css";
+import { useState, useEffect } from "react";
+import me from "../../images/dave_pic.png";
 
 const Intro = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setAnimate(true), 50);
+  }, []);
   return (
-    <div className="i">
-        <div className="i-left">
-            <div className="i-left-wrapper">
-                <h2 className="i-intro">Hello, My name is</h2>
-                <h1 className="i-name">David Stephen Sorote</h1>
-                <div className="i-title">
-                    <div className="i-title-wrapper">
-                        <div className="i-title-item">Front End Developer</div>
-                        <div className="i-title-item">React Developer</div>
-                    </div>
-                </div>
-                <p className="i-desc">
-             I specialize in front-end development using React, TypeScript, JavaScript, HTML, and CSS, with strong experience in responsive design, API integration, and component-based architecture.
-                </p>
+    <div className={`i ${animate ? "animate" : ""}`}>
+      <div className="i-left">
+        <div className="i-left-wrapper">
+          <h2 className="i-intro">Hello, My name is</h2>
+          <h1 className="i-name">David Stephen Sorote</h1>
+          <div className="i-title">
+            <div className="i-title-wrapper">
+              <div className="i-title-item">Front End Developer</div>
+              <div className="i-title-item">React Developer</div>
             </div>
-            <svg
+          </div>
+          <p className="i-desc">
+            I specialize in front-end development using React, TypeScript,
+            JavaScript, HTML, and CSS, with strong experience in responsive
+            design, API integration, and component-based architecture.
+          </p>
+        </div>
+        <svg
           width="75"
           height="75"
           viewBox="0 0 75 75"
@@ -74,13 +82,13 @@ const Intro = () => {
             </g>
           </g>
         </svg>
-        </div>
-        <div className="i-right">
-            <div className="i-bg"></div>
-            {/* <img src={me} alt="profile pic" className="i-img"/> */}
-        </div>
+      </div>
+      <div className="i-right">
+        <div className="i-bg"></div>
+        {/* <img src={me} alt="profile pic" className="i-img"/> */}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;

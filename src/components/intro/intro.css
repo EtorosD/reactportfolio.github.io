@@ -1,6 +1,49 @@
 .i {
     display: flex;
     height: 100vh;
+    opacity: 1;
+}
+
+/* INITIAL STATE: hidden, slightly off-screen */
+.i-left,
+.i-right {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+/* Slide left content from LEFT → RIGHT */
+.i-left {
+    transform: translateX(-50px);
+}
+
+/* Slide right content from RIGHT → LEFT */
+.i-right {
+    transform: translateX(50px);
+}
+
+/* ACTIVE STATE: fade + slide to position */
+.i.animate .i-left,
+.i.animate .i-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Existing styles */
+.i-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i {
+    display: flex;
+    height: 100vh;
 }
 
 .i-left {
