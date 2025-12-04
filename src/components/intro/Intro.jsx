@@ -1,6 +1,7 @@
 import "./intro.css";
 import { useState, useEffect } from "react";
-import me from "../../images/dave_pic.png";
+import Tech from "../../images/TEchnology.json";
+import Lottie from "lottie-react";
 
 const Intro = () => {
   const [animate, setAnimate] = useState(false);
@@ -26,7 +27,7 @@ const Intro = () => {
             design, API integration, and component-based architecture.
           </p>
         </div>
-        <svg
+        {/* <svg
           width="75"
           height="75"
           viewBox="0 0 75 75"
@@ -81,11 +82,16 @@ const Intro = () => {
               />
             </g>
           </g>
-        </svg>
+        </svg> */}
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
         {/* <img src={me} alt="profile pic" className="i-img"/> */}
+        <Lottie
+          animationData={Tech}
+          loop={true}
+          style={{ width: 1000, height: 1000 }}
+        />
       </div>
     </div>
   );
