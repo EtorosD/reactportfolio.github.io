@@ -87,11 +87,9 @@ const Intro = () => {
       <div className="i-right">
         <div className="i-bg"></div>
         {/* <img src={me} alt="profile pic" className="i-img"/> */}
-        <Lottie
-          animationData={Tech}
-          loop={true}
-          style={{ width: 1000, height: 1000 }}
-        />
+        <div className="lottie-wrapper">
+          <Lottie animationData={Tech} loop={true} />
+        </div>
       </div>
     </div>
   );
